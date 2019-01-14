@@ -23,13 +23,13 @@ When answering the questions, remember to use all the resources at your disposal
  > *A process is a task or a programm that needs to be executed by a prosessor, threads are programm sections inside the process that can happen at the same time, green threads are threads that can simulate a thread envirement without having the capabilitys for threading in the os, corutines are simular to threads but they provide concurrency and not parrallelism*
  
  ### Which one of these do `pthread_create()` (C/POSIX), `threading.Thread()` (Python), `go` (Go) create?
- > **
+ > *Corutines?*
  
  ### How does pythons Global Interpreter Lock (GIL) influence the way a python Thread behaves?
  > *It forces concurrency, since only one thread can use it at a time*
  
  ### With this in mind: What is the workaround for the GIL (Hint: it's another module)?
- > **
+ > *A fast google search told me it might be Cython*
  
  ### What does `func GOMAXPROCS(n int) int` change? 
  > *GOMAXPROCS sets the maximum number of CPUs that can be executing simultaneously and returns the previous setting. If n < 1, it does not change the current setting. The number of logical CPUs on the local machine can be queried with NumCPU. This call will go away when the scheduler improves.*
